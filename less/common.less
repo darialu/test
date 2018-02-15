@@ -1,0 +1,9 @@
+.imageSize (@path) {
+	width: image-width(@path);
+	height: image-height(@path);
+}
+
+.imageData (@path) {
+	background-image: url(~"@{path}");
+	.imageSize(@path);
+}

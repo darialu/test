@@ -102,6 +102,7 @@ section {
 }
 body {
   line-height: 1;
+  font-family: 'MyriadPro';
 }
 ol,
 ul {
@@ -122,15 +123,340 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+@font-face {
+  font-family: 'myriadPro';
+  src: url('../fonts/myriad-pro-regular.ttf');
+}
+@font-face {
+  font-family: 'gothamMedium';
+  src: url('../fonts/gotham-medium-regular.ttf');
+}
+@font-face {
+  font-family: 'gothamRegular';
+  src: url('../fonts/gotham-book-regular.otf');
+}
 header {
-  border: 1px solid red;
+  width: 100%;
   height: 100vh;
-  background: url(../images/headerBackground.png);
+  background: url(../images/headerBackground.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-x: center;
+  position: relative;
+}
+.header__creatives img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -85px;
+  margin-left: -412px;
+}
+.header__scroll img {
+  position: absolute;
+  top: 80%;
+  left: 52%;
+  margin-top: -35px;
+  margin-left: -49px;
+}
+.header__topcontent {
+  height: 116px;
+}
+.header__topcontent.topcontent {
+  border-bottom: 2px solid #646464;
+}
+.topcontent__menu {
+  height: 116px;
+  max-width: 1190px;
+  margin: 0 auto;
+}
+.menu__logo {
+  padding-left: 10px;
+  padding-top: 22px;
+  float: left;
+}
+.menu_social {
+  float: right;
+  line-height: 116px;
+  margin-left: 50px;
+}
+.menu_social img {
+  width: 17px;
+  height: 19px;
+  padding-right: 30px;
+}
+.menu__links {
+  line-height: 112px;
+  font-size: 20pt;
+  font-family: 'myriadPro';
+}
+.menu__links a {
+  display: block;
+  float: right;
+  padding: 0 20px;
+  text-align: center;
+  color: white;
+  text-decoration: none;
+}
+.menu__links a:hover {
+  border-bottom: 5px solid #11749e;
+}
+.about {
+  background-color: #11749e;
+  padding-top: 98px;
+  padding-bottom: 130px;
+  font-family: 'gothamMedium';
+  color: white;
+}
+.about__logo img {
+  display: block;
+  width: 639px;
+  height: 178px;
+  margin: auto;
+}
+.about__features {
+  margin: auto;
+  margin-top: 68px;
+  max-width: 1193px;
+  overflow: hidden;
+}
+.features {
+  display: block;
+}
+.features__single {
+  width: 280px;
+  float: left;
+}
+.features__single img {
+  display: block;
+  margin: 0 auto;
+}
+.single__title {
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 19px;
+  line-height: 58px;
+}
+.single__description {
+  font-family: 'gothamRegular';
+  font-size: 15px;
+  text-align: center;
+  line-height: 22px;
+}
+.news {
+  display: inline-block;
+  width: 100%;
+}
+.news__block {
+  width: 50%;
+  float: left;
+  line-height: 20px;
+}
+.news .news__block:nth-child(1) {
+  height: 447px;
+  background-color: #222222;
+  color: white;
+}
+.news .news__block:nth-child(2) {
+  height: 447px;
+  background: url(../images/akita1.png);
   background-repeat: no-repeat;
   background-size: cover;
 }
-.logo {
-  background-image: url(../images/logo.png);
-  width: 79px;
-  height: 75px;
+.news .news__block:nth-child(3) {
+  height: 474px;
+  background: url(../images/akita2.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.news .news__block:nth-child(4) {
+  height: 474px;
+  background-color: #f3f3f3;
+  color: black;
+}
+.news__block__article {
+  width: 475px;
+  height: 280px;
+  text-align: left;
+}
+.first {
+  margin-top: 104px;
+  margin-right: 80px;
+  float: right;
+}
+.second {
+  margin-top: 80px;
+  margin-left: 115px;
+}
+.news__block__article__date {
+  font-family: 'gothamRegular';
+  font-size: 13px;
+}
+.news__block__article__title {
+  font-family: 'gothamMedium';
+  font-size: 25px;
+  text-transform: uppercase;
+}
+.news__block__article__text {
+  font-family: 'gothamRegular';
+  font-size: 15px;
+}
+.blog {
+  background-color: #ffffff;
+  padding-top: 98px;
+  padding-bottom: 130px;
+  font-family: 'gothamMedium';
+  color: black;
+}
+.blog__logo img {
+  display: block;
+  width: 784px;
+  height: 246px;
+  margin: auto;
+}
+.blog__posts {
+  margin: auto;
+  margin-top: 68px;
+  max-width: 1193px;
+  overflow: hidden;
+}
+.posts {
+  display: block;
+}
+.posts__single {
+  width: 290px;
+  float: left;
+}
+.posts__single img {
+  display: block;
+  margin: 0 auto;
+}
+.posts__single__title {
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 19px;
+  line-height: 58px;
+}
+.posts__single__description {
+  font-family: 'gothamRegular';
+  font-size: 15px;
+  text-align: center;
+  line-height: 22px;
+}
+.quick {
+  background-color: #11749e;
+  padding-top: 114px;
+  padding-bottom: 157px;
+  font-family: 'gothamRegular';
+  color: white;
+  font-size: 15px;
+  line-height: 20px;
+}
+.quick__area {
+  margin: auto;
+  max-width: 1180px;
+  overflow: hidden;
+  display: block;
+}
+.quick__area__actions {
+  display: block;
+  width: 565px;
+  float: left;
+}
+.quick__area__actions img {
+  display: inline-block;
+  margin-left: 0;
+  float: left;
+  margin-right: 38px;
+}
+.float {
+  float: right;
+}
+.contact {
+  width: 100%;
+  height: 100vh;
+  background: url(../images/contactArea.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-x: center;
+  position: relative;
+  display: inline-block;
+}
+.contact_logo {
+  position: absolute;
+  top: 145px;
+  left: 50%;
+  margin-left: -443px;
+}
+.contact__form {
+  margin: 0 auto;
+  margin-top: 400px;
+  max-width: 1177px;
+  height: 350px;
+}
+::-webkit-input-placeholder {
+  color: white;
+  font-size: 15px;
+}
+::-moz-placeholder {
+  /* Firefox 19+ */
+  color: white;
+  font-size: 15px;
+}
+:-moz-placeholder {
+  /* Firefox 18- */
+  color: white;
+  font-size: 15px;
+}
+:-ms-input-placeholder {
+  color: white;
+  font-size: 15px;
+}
+input:-ms-input-placeholder {
+  color: white;
+  font-size: 15px;
+  line-height: 48px;
+}
+.form input {
+  border: 1px solid white;
+  background-color: transparent;
+  font-family: 'gothamRegular';
+  float: left;
+  color: white;
+  text-indent: 20px;
+}
+.form.form-size {
+  height: 48px;
+  width: 370px;
+}
+.form.name {
+  margin-right: 25px;
+}
+.form.email {
+  margin-right: 25px;
+}
+.form.message {
+  border: 1px solid white;
+  background-color: transparent;
+  text-indent: 20px;
+  font-family: 'gothamRegular';
+  color: white;
+  margin: 0 auto;
+  margin-top: 40px;
+  height: 150px;
+  width: 1165px;
+}
+.form_button {
+  width: 227px;
+  height: 64px;
+  display: block;
+  margin: auto;
+  margin-top: 45px;
+  background-color: #11749e;
+  border: none;
+  font-family: 'gothamRegular';
+  font-size: 23px;
+  color: white;
+  text-transform: uppercase;
+  font-weight: bold ;
+  letter-spacing: 1px;
 }

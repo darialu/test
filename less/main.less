@@ -1,29 +1,14 @@
 @import "reset.less";
-// @import "common.less";
+@import "common.less";
+@import "fonts.less";
 // @import "variables.less"
 
 // blocks
-
-header {
-	border: 1px solid red;
-	// width: 100%;
-	height: 100vh;
-	background: url(../images/headerBackground.png);
-	background-repeat: no-repeat;
-	background-size: cover;
-	// background-size: cover;
-}
-
-.imageSize (@path) {
-	width: image-width(@path);
-	height: image-height(@path);
-}
-
-.imageData (@path) {
-	background-image: url(~"@{path}");
-	.imageSize(@path);
-}
-
-.logo {
-	.imageData('../images/logo.png');
-}
+@import "header.less";
+@import "topmenu.less";
+@import "about.less";
+@import "news.less";
+@import "blog.less";
+@import "quickAction.less";
+@import "contact.less";
+@import "form.less";
