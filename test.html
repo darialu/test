@@ -4,6 +4,8 @@
     <meta charset="utf-8" />
     <title>Test</title>
     <link href='css/main.css' rel='stylesheet' type='text/css'>
+    <script src="http://code.jquery.com/jquery-3.3.1.slim.js" integrity="sha256-fNXJFIlca05BIO2Y5zh1xrShK3ME+/lYZ0j+ChxX2DA="crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width">
 </head>
 <body>
     <div id="container">
@@ -11,6 +13,7 @@
             <div class="topcontent header__topcontent">
                 <div class="menu topcontent__menu">
                     <img class="menu__logo" src="images/logo.png">
+                    <div class="nav-toggle"><span></span></div>
                     <div class="menu_social">
                         <a href="#"><img src="images/facebook.png"></a>
                         <a href="#"><img src="images/twitter.png"></a>
@@ -28,10 +31,12 @@
                 </div>
             </div>
             <div class="header__creatives"><img src="images/creatives.png"></div>
-            <div class="header__scroll"><img src="images/scrollDown.png"></div>
+            <div class="header__creative-small"></div>
+            <div class="header__scroll"><a href="#scroll"><img src="images/scrollDown.png"></a></div>
         </header>
-        <div class="about">
+        <div class="about" id="scroll">
             <div class="about__logo"><img src="images/about.png"></div>
+            <div class="about__logo-small"></div>
             <div class="features about__features">
                 <div class="features__single">
                     <img src="images/one.png">
@@ -94,32 +99,33 @@
         </div>
         <div class="blog">
                 <div class="blog__logo"><img src="images/blog.png"></div>
+                <div class="blog__logo_small"></div>
                 <div class="posts blog__posts">
                     <div class="posts__single">
                         <img src="images/blog1.png">
-                        <p class="posts__single__title"> Fresh Summer Campaign</p>
-                        <p class="posts__single__description">
+                        <br><p class="posts__single__title"> Fresh Summer Campaign</p>
+                        <br><p class="posts__single__description">
                             Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed odio dui. Vivamus sagittis lacus vel augue  
                         </p>
                     </div>
                     <div class="posts__single">
                         <img src="images/blog2.png">
-                        <p class="posts__single__title"> Fresh Summer Campaign</p>
-                        <p class="posts__single__description">
+                        <br><p class="posts__single__title"> Fresh Summer Campaign</p>
+                        <br><p class="posts__single__description">
                             Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed odio dui. Vivamus sagittis lacus vel augue  
                         </p>
                     </div>
                     <div class="posts__single">
                         <img src="images/blog3.png">
-                        <p class="posts__single__title"> Fresh Summer Campaign</p>
-                        <p class="posts__single__description">
+                        <br><p class="posts__single__title"> Fresh Summer Campaign</p>
+                        <br><p class="posts__single__description">
                             Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed odio dui. Vivamus sagittis lacus vel augue  
                         </p>
                     </div>
                     <div class="posts__single">
                         <img src="images/blog4.png">
-                        <p class="posts__single__title"> Fresh Summer Campaign</p>
-                        <p class="posts__single__description">
+                        <br><p class="posts__single__title"> Fresh Summer Campaign</p>
+                        <br><p class="posts__single__description">
                             Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed odio dui. Vivamus sagittis lacus vel augue                         
                         </p>
                     </div>
@@ -129,13 +135,13 @@
         <div class="quick">
             <div class="quick__area">
                 <div class="quick__area__actions">
-                    <img src="images/quickAction.png">
+                    <img src="images/quick.png">
                     <p>
                         Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed odio dui. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.
                     </p>
                 </div>
                 <div class="quick__area__actions float">
-                    <img src="images/quickAction.png">
+                    <img src="images/quick.png">
                     <p>
                         Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed odio dui. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.
                     </p>
@@ -144,6 +150,7 @@
         </div>
         <div class="contact">
             <img class="contact_logo" src="images/contact.png">
+            <div class="contact_logo-small"></div>
             <div class="form contact__form">
                 <input class="form name form-size" type="text" name="user-name" placeholder="Name" value="">
                 <input class="form email form-size" type="text" name="user-email" placeholder="Email" value="">
@@ -154,8 +161,22 @@
         </div>
         <div class="map">
         </div>
+        <div class="footer">
+            <div class="footer_content">
+                <div class="footer_content_colomn-left">
+                    <p>© 2016 PSDfreebies.com – All Right Reserved</p>
+                </div>
+                <div class="footer_content_colomn-right">
+                    <p>Design by: <img src="images/bee.png">PSDFreebies.com</p>
+                </div>
+            </div>
+        </div>
     </div>
         
-    
+    <script>
+        $('.nav-toggle').on('click', function(){
+          $('#menu').toggleClass('active');
+        });
+    </script>    
 </body>
 </html>	
