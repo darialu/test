@@ -6,7 +6,6 @@ header {
 	background-size: cover;
 	background-position-x: center;
 	position: relative;
-	
 }
 
 .header__creatives img {
@@ -17,14 +16,57 @@ header {
     margin-left: -412px;
 }
 
-.header__creative__small {
-	//display: none;
+.nav-toggle {
+    display: none;
+    position: relative;
+    float: left;
+    width: 40px;
+    height: 40px;
+    // margin-left: 20px;
+    background: #11749e;
+    cursor: pointer;
+}
+    
+.nav-toggle span {
+    display: block;
+    position: absolute;
+    top: 19px;
+    left: 8px;
+    right: 8px;
+    height: 2px;
+    background: white;
+}
+    
+.nav-toggle span:before, .nav-toggle span:after {
+    content: "";
+    position: absolute;
+    display: block;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: white; 
+}
+    
+.nav-toggle span:before {
+    top: -10px;
+}
+    
+.nav-toggle span:after {
+    bottom: -10px;
+}
+    /* класс, который будет добавлен в верхнему меню при нажатии на кнопку и покажет скрытое меню*/
+#mobile-menu.active {
+	height: 100%;
 }
 
-.header__scroll img {
+.header__scroll {
+	background: url(../images/scrollDown.png);
+	background-repeat: no-repeat;
+	background-size: contain;
 	position: absolute;
-    top: 80%;
-    left: 52%;
-    margin-top: -35px;
-    margin-left: -49px;
+	top: 75%;
+	left: 47%;
+	width: 5%;
+	height: 90px;
+	cursor: pointer;
 }

@@ -1,36 +1,16 @@
 ::-webkit-input-placeholder {
     color:white;
-    // padding-left: 20px;
     font-size: 15px;
-    // line-height: 48px;
+    text-indent: 20px;
 }
 
-::-moz-placeholder { /* Firefox 19+ */
+input:-moz-placeholder { /* Firefox 19+ */
     color:white;
-    // padding-left: 20px;
-    font-size: 15px;
-    // line-height: 48px;
+    font-size: 30px;
 }
 
-:-moz-placeholder { /* Firefox 18- */
+input.form-size:-ms-input-placeholder {
     color:white;
-    // padding-left: 20px;
-    font-size: 15px;
-    // line-height: 48px;
-}
-
-:-ms-input-placeholder {
-    color:white;
-    // padding-left: 20px;
-    font-size: 15px;
-    // line-height: 48px;
-}
-
-input:-ms-input-placeholder {
-    color:white;
-    // padding-left: 20px;
-    font-size: 15px;
-    line-height: 48px;
 }
 
 .form {
@@ -38,12 +18,9 @@ input:-ms-input-placeholder {
         border: 1px solid white;
         background-color: transparent;
         font-family: 'gothamRegular'; 
-        // font-size: 25px;
-        //float: left;
         color: white;
         text-indent: 20px;
-        // height: 48px;
-        // width: 370px;
+        float: left;
     }
 
     &.form-size {
@@ -64,6 +41,7 @@ input:-ms-input-placeholder {
         background-color: transparent;
         text-indent: 20px;
         font-family: 'gothamRegular'; 
+        font-size: 15px;
         color: white;
         margin: 0 auto;
         margin-top: 40px;
@@ -72,10 +50,9 @@ input:-ms-input-placeholder {
     }
 }
 
-.form_button{
+.form_button {
     width: 227px;
     height: 64px;
-    //padding-top: 45px;
     display: block;
     margin: auto;
     margin-top: 45px;
@@ -88,4 +65,5 @@ input:-ms-input-placeholder {
     text-transform: uppercase;
     font-weight: bold ;
     letter-spacing: 1px;
+    cursor: pointer;
 }

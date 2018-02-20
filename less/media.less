@@ -1,7 +1,4 @@
 @media (max-width: 1199px) and (min-width: 800px) {
-    .nav-toggle {
-            display: block;
-        }
 
 //header
 
@@ -102,8 +99,26 @@
 @media (max-width: 820px) {
 
 //header 
-    header {
-        //margin-top: 45vh;
+    .nav-toggle {
+        display: block;
+    }
+
+    #mobile-menu {
+        display: block;
+        height: 0;
+        background: #313131 ;
+        position: fixed;
+        overflow: hidden;
+        margin-top: 40px;
+        padding-left: 5px;
+        z-index: 3;
+        width: 110px;
+        transition: all 0.3s ease;
+    }
+        /* делаем элементы списка блочными, чтобы они располагались друг под другом */
+    #mobile-menu li {
+        display: block;
+        border-bottom: 1px solid #393534;
     }
 
     .header__topcontent {
@@ -111,14 +126,6 @@
     }
     .header__creatives img {
         display: none;
-    }
-
-    .header__scroll img {
-        position: absolute;
-        top: 80%;
-        left: 40%;
-        width: 20%;
-        height: 60px;
     }
 
     .header__creative-small {
@@ -131,6 +138,7 @@
         left: 15%;
         height: 100px;
     }
+
     .menu__logo {
         display: none;
     }
