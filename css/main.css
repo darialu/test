@@ -220,7 +220,7 @@ header {
   padding-top: 22px;
   float: left;
 }
-.menu_social {
+.menu__social {
   float: right;
   line-height: 116px;
   margin-left: 50px;
@@ -547,7 +547,7 @@ input.form-size:-ms-input-placeholder {
   .menu__logo {
     display: none;
   }
-  .menu_social {
+  .menu__social {
     display: none;
   }
   .menu__links {
@@ -647,12 +647,6 @@ input.form-size:-ms-input-placeholder {
     top: 25%;
     left: 15%;
     height: 100px;
-  }
-  .menu__logo {
-    display: none;
-  }
-  .menu_social {
-    display: none;
   }
   .menu__links {
     float: none;
